@@ -1,0 +1,104 @@
+body {
+  background-image: url(8_pic1.png);
+}
+
+div {
+  background-color: white;
+  width:960px;
+  margin:auto;
+  border: 2px solid black;
+  /*padding: 10px;*/
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px auto 75px;
+}
+
+header {
+  background-color: black;
+  color: white;
+  padding-left:20px;
+  margin: 10px 10px 10px 10px;
+  grid-column: 3/4;
+  /*怎麼讓字不租體*/
+
+  text-align: left;
+  font: Helvetica;
+}
+
+audio {
+  grid-column: span 1;
+  float: left
+}
+
+nav {
+  grid-column: span 1;
+  margin-left:0px;
+  /*字靠左*/
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+  background-color: red;
+  /*padding: 20px;*/
+  margin-top: 20px;
+  margin-bottom: 20px;
+/*  margin-right: 10px;*/
+  /*width: 180px;*/
+}
+
+li:hover {
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  /*連結下面的線會不見*/
+  color: white;
+}
+
+
+
+
+main {
+  font: Georgia;
+  width: 710px;
+  grid-column: span 3;
+  margin-right: 10px;
+  line-height: 20px;
+}
+
+.secondheader {
+  border-bottom: 2px solid black;
+  padding-left: 15px;
+}
+
+iframe {
+  float:left;
+  margin-top: 5px;
+}
+
+ .paragraphs {
+   font-weight: bold;
+   padding-top: 5px;
+
+ }
+
+ .red {
+   color:red;
+   font-weight: bold;
+ }
+footer {
+  background-color: red;
+  color: white;
+  text-align: center;
+  clear: both;
+  font: Verdana;
+  font-style: italic;
+  border-top:  2px solid black;
+  margin-top: 3px;
+  grid-column: span 4;
+    /*怎麼讓框框變小. 沒辦法到底*/
+}
